@@ -74,6 +74,7 @@ window.onload = function(){
 			if(enemy[i].alive){
 				if(CollisionEnemy(enemy[i].position,chara.position)){
 					run = false;
+					console.log("Collision with Enemy!");
 				}
 				for(j = 0;j < SHOT_MAX;j++){
 					if(charaShot[j].alive){
@@ -103,6 +104,7 @@ window.onload = function(){
 		for(i = 0;i < ENEMY_SHOT_MAX;i++){
 			if(CollisionEnemyShot(enemyShot[i].position,chara.position)){
 				run = false;
+				console.log("Collision with EnemyShot!");
 			}
 		}
 
